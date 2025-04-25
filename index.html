@@ -5,134 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Define the list of pages
-        const allpages = [
+      // Generate a random number
+const randomNumber = Math.floor(Math.random() * 114); // Replace 1000 with your desired range
 
+// Build the URL with the random number
+const url = `http://auntieshanty.org/n/${randomNumber}`
 
-            "https://www.auntieshanty.org/n/1",
-"https://www.auntieshanty.org/n/2",
-"https://www.auntieshanty.org/n/3",
-"https://www.auntieshanty.org/n/4",
-"https://www.auntieshanty.org/n/5",
-"https://www.auntieshanty.org/n/6",
-"https://www.auntieshanty.org/n/7",
-"https://www.auntieshanty.org/n/8",
-"https://www.auntieshanty.org/n/9",
-"https://www.auntieshanty.org/n/10",
-"https://www.auntieshanty.org/n/11",
-"https://www.auntieshanty.org/n/12",
-"https://www.auntieshanty.org/n/13",
-"https://www.auntieshanty.org/n/14",
-"https://www.auntieshanty.org/n/15",
-"https://www.auntieshanty.org/n/16",
-"https://www.auntieshanty.org/n/17",
-"https://www.auntieshanty.org/n/18",
-"https://www.auntieshanty.org/n/19",
-"https://www.auntieshanty.org/n/20",
-"https://www.auntieshanty.org/n/21",
-"https://www.auntieshanty.org/n/22",
-"https://www.auntieshanty.org/n/23",
-"https://www.auntieshanty.org/n/24",
-"https://www.auntieshanty.org/n/25",
-"https://www.auntieshanty.org/n/26",
-"https://www.auntieshanty.org/n/27",
-"https://www.auntieshanty.org/n/28",
-"https://www.auntieshanty.org/n/29",
-"https://www.auntieshanty.org/n/30",
-"https://www.auntieshanty.org/n/31",
-"https://www.auntieshanty.org/n/32",
-"https://www.auntieshanty.org/n/33",
-"https://www.auntieshanty.org/n/34",
-"https://www.auntieshanty.org/n/35",
-"https://www.auntieshanty.org/n/36",
-"https://www.auntieshanty.org/n/37",
-"https://www.auntieshanty.org/n/38",
-"https://www.auntieshanty.org/n/39",
-"https://www.auntieshanty.org/n/40",
-"https://www.auntieshanty.org/n/41",
-"https://www.auntieshanty.org/n/42",
-"https://www.auntieshanty.org/n/43",
-"https://www.auntieshanty.org/n/44",
-"https://www.auntieshanty.org/n/45",
-"https://www.auntieshanty.org/n/46",
-"https://www.auntieshanty.org/n/47",
-"https://www.auntieshanty.org/n/48",
-"https://www.auntieshanty.org/n/49",
-"https://www.auntieshanty.org/n/50",
-"https://www.auntieshanty.org/n/51",
-"https://www.auntieshanty.org/n/52",
-"https://www.auntieshanty.org/n/53",
-"https://www.auntieshanty.org/n/54",
-"https://www.auntieshanty.org/n/55",
-"https://www.auntieshanty.org/n/56",
-"https://www.auntieshanty.org/n/57",
-"https://www.auntieshanty.org/n/58",
-"https://www.auntieshanty.org/n/59",
-"https://www.auntieshanty.org/n/60",
-"https://www.auntieshanty.org/n/61",
-"https://www.auntieshanty.org/n/62",
-"https://www.auntieshanty.org/n/63",
-"https://www.auntieshanty.org/n/64",
-"https://www.auntieshanty.org/n/65",
-"https://www.auntieshanty.org/n/66",
-"https://www.auntieshanty.org/n/67",
-"https://www.auntieshanty.org/n/68",
-"https://www.auntieshanty.org/n/69",
-"https://www.auntieshanty.org/n/70",
-"https://www.auntieshanty.org/n/71",
-"https://www.auntieshanty.org/n/72",
-"https://www.auntieshanty.org/n/73",
-"https://www.auntieshanty.org/n/74",
-"https://www.auntieshanty.org/n/75",
-"https://www.auntieshanty.org/n/76",
-"https://www.auntieshanty.org/n/77",
-"https://www.auntieshanty.org/n/78",
-"https://www.auntieshanty.org/n/79",
-"https://www.auntieshanty.org/n/80",
-"https://www.auntieshanty.org/n/81",
-"https://www.auntieshanty.org/n/82",
-"https://www.auntieshanty.org/n/83",
-"https://www.auntieshanty.org/n/84",
-"https://www.auntieshanty.org/n/85",
-"https://www.auntieshanty.org/n/86",
-"https://www.auntieshanty.org/n/87",
-"https://www.auntieshanty.org/n/88",
-"https://www.auntieshanty.org/n/89",
-"https://www.auntieshanty.org/n/90",
-"https://www.auntieshanty.org/n/91",
-"https://www.auntieshanty.org/n/92",
-"https://www.auntieshanty.org/n/93",
-"https://www.auntieshanty.org/n/94",
-"https://www.auntieshanty.org/n/95",
-"https://www.auntieshanty.org/n/96",
-"https://www.auntieshanty.org/n/97",
-"https://www.auntieshanty.org/n/98",
-"https://www.auntieshanty.org/n/99",
-"https://www.auntieshanty.org/n/100",
-"https://www.auntieshanty.org/n/101",
-"https://www.auntieshanty.org/n/102",
-"https://www.auntieshanty.org/n/103",
-"https://www.auntieshanty.org/n/104",
-"https://www.auntieshanty.org/n/105",
-"https://www.auntieshanty.org/n/106",
-"https://www.auntieshanty.org/n/107",
-"https://www.auntieshanty.org/n/108",
-"https://www.auntieshanty.org/n/109",
-"https://www.auntieshanty.org/n/110",
-"https://www.auntieshanty.org/n/111",
-"https://www.auntieshanty.org/n/112",
-"https://www.auntieshanty.org/n/113",
-"https://www.auntieshanty.org/n/114"
-
-
-
-        ];
-
-        // Select a random page
-        const randomPage = allpages[Math.floor(Math.random() * allpages.length)];
-
-        // Redirect to the selected page
-        window.location.href = randomPage;
+// Redirect the user to the generated URL
+window.location.href = url;
     </script>
 </head>
 <body>
